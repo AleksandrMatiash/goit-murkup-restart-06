@@ -39,6 +39,7 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 /*хедер, лого*/
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -166,6 +167,10 @@ footer {
   background-color: #2e2f42;
 }
 .section-one {
+  padding: 0 0;
+}
+.section-one-div {
+  padding: 188px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -174,9 +179,6 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 188px 0;
-}
-.section-one-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -472,6 +474,7 @@ footer {
 /* модальное окно */
 
 .modal-overley {
+  z-index: 999;
   opacity: 0;
   position: fixed;
   top: 0;
@@ -479,17 +482,14 @@ footer {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-overley,
-.is-open {
+.modal-overley .is-open {
   opacity: 1;
   pointer-events: auto;
 }
@@ -685,4 +685,373 @@ footer {
 }
 .privacy-link {
   color: #4d5ae5;
+}
+@media screen and (min-width: 1024px) {
+  .mobile-meniu {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+/************ hidden-media *************/
+@media screen and (min-width: 768px) {
+  .mobile-meniu,
+  .table-desk-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+/******** телефончик ********/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /* хеддер-мобайл */
+  .container {
+    max-width: 320px;
+  }
+  .nav-header {
+    min-width: 100%;
+  }
+
+  .tel-version {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .mobile-meniu {
+    margin: 16px 0 16px 0;
+  }
+  .nav-header {
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  /* мобильная 1-я секция */
+  .section-one-div {
+    min-width: 100%;
+  }
+  .zag {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 2%;
+    text-align: center;
+    width: 208px;
+  }
+
+  /* мобильная 2-я секция */
+  .div-svg {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .ul-section-two {
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+  }
+  .li-section-two {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .values-hd {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 2%;
+    text-align: center;
+  }
+  .values-p {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+  }
+
+  /* мобильная 3-я секция */
+  .div-section-three {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ul-section-three {
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+  }
+  .team-list {
+    width: 264px;
+  }
+  /* мобильная 4-я секция */
+  .ul-section-four {
+    flex-direction: column;
+    align-items: center;
+  }
+  .four-s-list {
+    width: 288px;
+  }
+  /* футер-мобайл */
+  .footer-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    min-width: 100%;
+    flex-direction: column;
+  }
+
+  .div-logo-p {
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+  }
+  .fot-link {
+    margin: auto;
+  }
+  .p-footer {
+    margin: 16px 0 0 0;
+  }
+
+  .social-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 72px auto;
+    max-width: 208px;
+  }
+  .subscribe-div {
+    margin: auto;
+    max-width: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-subscribe {
+    margin-top: 16px;
+  }
+  .btn-subscribe {
+    margin: 0;
+  }
+  /* мобильная модалка 1 */
+  .modal {
+    width: 288px;
+  }
+  /* модал меню мобайл 2 */
+
+  .modal-meniu-mobile {
+    z-index: 999;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4fd;
+    padding: 16px;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-meniu-mobile .is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-content-flex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .div-adress-tel {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-vrs {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 0;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .div-box-nav-tel {
+    padding-top: 72px;
+  }
+  .nav-list {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 2%;
+  }
+  .addr-ul {
+    width: 193px;
+  }
+  .addr-ul {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .stile-number {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    gap: 24px;
+  }
+  .tel-ul-masege-svg {
+    display: flex;
+    width: 280px;
+    gap: 40px;
+    margin-top: 48px;
+  }
+  .tel-masege-item {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* планшетик */
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .container {
+    max-width: 768px;
+  }
+  .header {
+    min-width: 100%;
+  }
+  .hed-link {
+    margin-right: 120px;
+  }
+  ul.addr-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .addr-link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  /* 1 section */
+  .section-one-div {
+    min-width: 100%;
+  }
+  /* 2 section */
+  .div-svg {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .ul-section-two {
+    justify-content: center;
+    min-width: 736px;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .values-hd {
+    font-family: "roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .general-p {
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .li-section-two {
+    min-width: 356px;
+  }
+  /* 3 section */
+  .div-section-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ul-section-three {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 768px;
+  }
+  .team-list {
+    min-width: 264px;
+  }
+  /* 4 section */
+
+  .four-s-list {
+    width: 356px;
+  }
+
+  /* footer */
+  .footer-div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .div-logo-p {
+    margin: 0 24px 72px 0;
+  }
+  .social-footer {
+    margin: 0;
+  }
+  .subscribe-div {
+    margin: 0 43px 0 0;
+  }
+  .btn-subscribe {
+    margin: 0;
+  }
 }
