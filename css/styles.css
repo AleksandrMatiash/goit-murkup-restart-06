@@ -173,7 +173,10 @@ footer {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero.img/h_desk_.jpg);
+    image-set(
+      url(../images/hero.img/desk_@1x.jpg),
+      url(../images/hero.img/desk_@2x.jpg)
+    );
   padding: 188px 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -722,8 +725,8 @@ footer {
   .container {
     max-width: 320px;
   }
-  section {
-    padding: 90px 0;
+  .section {
+    padding: 96px 0;
   }
   .nav-header {
     min-width: 100%;
@@ -754,7 +757,10 @@ footer {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero.img/h_tel_.jpg);
+      image-set(
+        url(../images/hero.img/tel_@1x.jpg),
+        url(../images/hero.img/tel_@2x.jpg)
+      );
     padding: 72px 0;
   }
 
@@ -831,6 +837,8 @@ footer {
   }
   .four-s-list {
     width: 288px;
+    box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
+      0px 1px 6px 0px #2e2f4214;
   }
   /* футер-мобайл */
   .footer-div {
@@ -850,12 +858,12 @@ footer {
     width: 288px;
   }
   .fot-link {
-    margin: auto;
+    margin: 0 auto;
+    margin-bottom: 16px;
   }
-  .p-footer {
-    margin: 0 0 16px 0;
+  .input-subscribe {
+    width: 288px;
   }
-
   .social-footer {
     display: flex;
     flex-direction: column;
@@ -929,8 +937,8 @@ footer {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .div-box-nav-tel {
-    padding-top: 72px;
+  .nav-tel {
+    margin-top: 70px;
   }
   .nav-list {
     font-family: "Roboto", sans-serif;
@@ -938,6 +946,8 @@ footer {
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 2%;
+    padding: 0;
+    margin: 40px 0 0 0;
   }
   .addr-ul {
     width: 193px;
@@ -946,6 +956,9 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     gap: 24px;
+  }
+  .addr-link {
+    font-style: normal;
   }
   .stile-number {
     font-family: "Roboto", sans-serif;
@@ -969,8 +982,8 @@ footer {
 
 /* планшетик */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  section {
-    padding: 90px 0;
+  .section {
+    padding: 96px 0;
   }
   .container {
     max-width: 768px;
@@ -999,7 +1012,10 @@ footer {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero.img/h_tabl_.jpg);
+      image-set(
+        url(../images/hero.img/tabl_@1x.jpg),
+        url(../images/hero.img/tabl_@2x.jpg)
+      );
     padding: 112px 0;
   }
   .section-one-div {
@@ -1058,6 +1074,8 @@ footer {
 
   .four-s-list {
     width: 356px;
+    box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
+      0px 1px 6px 0px #2e2f4214;
   }
 
   /* footer */
